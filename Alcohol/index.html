@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alcohol?</title>
+    <link rel="stylesheet" href="./index.css">
+
+    <script>
+
+        function runTest(){
+            var gebruikersInput = document.getElementById("inputField").value;
+            console.log(gebruikersInput);
+            var antwoord = showResult(gebruikersInput);
+            document.getElementById("antwoord").innerHTML = antwoord[0];
+            document.getElementById("antwoord-container").style.backgroundColor = antwoord[1];
+            console.log(antwoord);
+        }
+
+        function showResult(leeftijd){
+            if(leeftijd < 16 && leeftijd >= 0){
+                return ["Ga maar naar de Intertoys", "red"];
+            }
+            else if(leeftijd > 15 && leeftijd < 18){
+                return ["Alleen bier en wijn voor jou", "orange"];
+            }
+            else if(leeftijd >= 18){
+                return ["Ga los!", "green"];
+            }
+            else{
+                return ["Vul een leeftijd in", "white"];
+            }
+        }
+
+    </script>
+</head>
+<body>
+
+    <div class="vraag">
+        <h1>De alcoholtest</h1>
+        <h2>Mag jij wel drinken?? Vul hieronder je leeftijd in:</h2>
+        <input type="number" id="inputField">
+        <button onclick="runTest()">Test</button>
+
+        <div id="antwoord-container">
+            <h2 id="antwoord">antwoord</h2>
+        </div>
+    </div>
+    
+</body>
+</html>
