@@ -1,0 +1,13 @@
+body{
+    margin: 20px;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+button{
+    padding: 20px;
+}
+
+
+.midden{
+    text-align: center;
+}

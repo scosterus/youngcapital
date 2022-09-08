@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+    
+    <script>
+        function beginnen(){
+            console.log("Hallo");
+            let getal = 234;
+            console.log(Math.pow(getal,3));
+            console.log( getal < 500 && getal > 0);
+
+            var gebruikersInput = document.getElementById("inputText").value;
+            console.log(gebruikersInput);
+
+            document.getElementById("output").innerHTML = gebruikersInput;
+            document.getElementById("output").style.color = "red";
+        }
+    </script>
+</head>
+<body>
+    <div class="midden">
+        <button onclick="beginnen()">Run function</button>
+
+    </div>
+
+    <div class="aantekeningen">
+        <h1>aantekeningen</h1>
+        <p> 
+            
+            // OPERATORS <br>
+            // Assignment    =   += ++ -- -= *= <br>
+            // Comparitive      ==   ===    < > <= >=   !=  !== (<>) <br>
+            // Arithmic     + * - / % <br>
+            // Logische     ||  && <br>
+            // Bitwise ^ >> & | <br>
+            // 0110 <br>
+            // 1100 <br>
+            // 1110  | <br>
+            // 0100  & <br>
+            
+            
+        
+        </p>
+    </div>
+
+    <div>
+        <input type="text" name="" id="inputText">
+
+        <h2 id="output">Dit gaat veranderen</h2>
+
+    </div>
+    
+</body>
+</html>
